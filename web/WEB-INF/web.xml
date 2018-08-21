@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <!-- 声明Servlet -->
+    <servlet>
+        <servlet-name>bookList</servlet-name>
+        <servlet-class>com.nf147.ldl.web.BookList</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>bookList</servlet-name>
+        <url-pattern>/bookList</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>bookDel</servlet-name>
+        <servlet-class>com.nf147.ldl.web.BookDel</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>bookDel</servlet-name>
+        <url-pattern>/bookDel</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>bookDetail</servlet-name>
+        <servlet-class>com.nf147.ldl.web.BookDetail</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>bookDetail</servlet-name>
+        <url-pattern>/bookDetail</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>bookAdd</servlet-name>
+        <servlet-class>com.nf147.ldl.web.BookAdd</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>bookAdd</servlet-name>
+        <url-pattern>/bookAdd</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>bookSearch</servlet-name>
+        <servlet-class>com.nf147.ldl.web.BookSearch</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>bookSearch</servlet-name>
+        <url-pattern>/bookSearch</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>bookUpdate</servlet-name>
+        <servlet-class>com.nf147.ldl.web.BookUpdate</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>bookUpdate</servlet-name>
+        <url-pattern>/bookUpdate</url-pattern>
+    </servlet-mapping>
+
+    <!-- 引入setemesh 过滤器  -->
+    <filter>
+        <filter-name>sitemesh</filter-name>
+        <filter-class>com.opensymphony.sitemesh.webapp.SiteMeshFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>sitemesh</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+</web-app>

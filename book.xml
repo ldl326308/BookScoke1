@@ -1,0 +1,14 @@
+<bookstore>
+    <book id="1">
+        <mingzi>阿弥陀佛么么哒</mingzi>
+        <zuozhe>大冰</zuozhe>
+        <nian>2014</nian>
+        <price>89</price>
+    </book>
+    <book id="2">
+        <mingzi></mingzi>
+        <nian>一定</nian>
+        <price>好的</price>
+        <language>English</language>
+    </book>
+</bookstore>

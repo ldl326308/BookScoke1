@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/layouts">
+
+    <!-- 定义不过滤的页面，即排除页面 -->
+    <excludes>
+        <pattern>/assets/*</pattern>
+    </excludes>
+
+    <!--  定义要装饰的页面  -->
+    <decorator name="book" page="book_Main.jsp">
+        <pattern>/*</pattern>
+    </decorator>
+</decorators>
